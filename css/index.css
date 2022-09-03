@@ -662,9 +662,87 @@ body{
 /************       inicio seccion 5   ****************/
 
 .seccion-cinco{
-    background-color: green;
-    height: 1200px;
+    background-color: var(--color_fondo_secundario);
+    width: 100%;
+    height: 800px;
+    display: grid;
+    justify-items: center;
 }
+
+.cinco-contenedor{
+    display: grid;
+    grid-template-rows: 20% 80%;
+    width: 80%;
+}
+
+.cinco-arriba{
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+
+.cinco-arriba-p{
+    display: grid;
+    text-align: center;
+    align-content: flex-end;
+    width: 100px;
+    height: 40px;
+    align-self: flex-end;   /*centrado de la caja*/
+    justify-self: center;
+    align-content: center;  /*centrado dentro de la caja*/
+    border-radius: 15px;
+    background-color: var(--color_secciones);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cinco-arriba-h2{
+    display: grid;
+    justify-content: center;
+}
+
+.cinco-abajo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cinco-tarjetas{
+    text-align: center;
+    justify-content: space-between;
+    margin: 5px 10px;
+    height: 450px;
+    display: grid;
+    align-content: center;
+}
+
+.cinco-tarjeta-vista{
+    display: grid;
+    grid-template-rows: 15% 85%;
+}
+
+.tarjeta-h3{
+    font-weight: bold;
+    font-size: 22px;
+    align-self: center;
+}
+
+
+
+
+
+.cinco-img{
+    width: 350px;
+    border-radius: 30px;
+}
+
+
+
+
+
 
 
 /************       fin seccion 5   ****************/
@@ -892,6 +970,21 @@ body{
     }
 }
 
+/*  responsividad seccion 5 */
+
+@media (max-width: 1419px){
+    .seccion-cinco{
+        
+        height: 1200px;
+        
+    }
+}
+
+@media (max-width: 951px){
+    .seccion-cinco{
+        height: 1800px;
+    }
+}
 
 
 
