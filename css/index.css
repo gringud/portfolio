@@ -763,7 +763,7 @@ body{
     display: grid;
     grid-template-columns: 35% 65%;
     justify-self: center;
-    width: 80%;
+    width: 60%;
     height: 90%;
     align-self: flex-end;
 }
@@ -864,7 +864,6 @@ body{
 .footer-input{
     background-color: transparent;
     font-size: 16px;
-    text-align: center;
     border: none;
     border-bottom: 1px solid #d7c445;
     padding: 5px;
