@@ -731,7 +731,7 @@ body{
 }
 
 .cinco-img{
-    width: 320px;
+    width: 300px;
     border-radius: 30px;
 }
 
@@ -743,15 +743,206 @@ body{
 
 /************       fin seccion 5   ****************/
 
-/************       inicio seccion 6   ****************/
+/************       inicio footer   ****************/
 
-.seccion-seis{
-    background-color: rgb(241, 71, 190);
-    height: 1200px;
+.footer{
+    background-color: var(--color_secciones);
+    height: 700px;
+    
+
+}
+
+.footer-container{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 90% 10%;
+    justify-self: center;
+}
+
+.footer-arriba{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    justify-self: center;
+    width: 80%;
+    height: 90%;
+    align-self: flex-end;
+}
+
+.footer-izq{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 30% 20%;
+    margin-right: 20px;
+
+}
+
+.footer-izq-arriba{
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.footer-izq-arriba h3{
+    display: grid;
+    align-self: flex-end;
+    font-weight: bold;
+    font-size: 30px;
+    color: #212529;
+}
+
+.footer-izq-arriba p{
+    margin-top: 5px;
+}
+
+.footer-izq-centro{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.footer-izq-centro-titulo{
+    font-weight: bold;
+    font-size: 20px;
+    display: grid;
+    align-content: flex-end;
+}
+
+.footer-izq-abajo{
+    display: grid;
+    justify-content: center;    
+}
+
+.footer-link{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* justify-items: stretch; */
+}
+
+.footer-icon{
+    padding-left: 10px;
+    height: 20px;
+    text-decoration: none;
+    color: var(--color_negro);
+}
+
+.footer-icon:hover{
+    color: var(--color_letra);
+    filter: drop-shadow(0px 0px 7px blue);
+    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+    transition: color 1s linear .1s, filter 1s linear .1s;
+}
+
+.footer-der{
+    height: 100%;
+    display: grid;
+    grid-template-rows: .5fr 2fr .3fr;
+}
+
+.footer-der-titulo{
+    text-align: center;
+    align-self: flex-end;
+    margin-block-end: 12px;
+}
+
+.footer-formulario{
+    display: grid;
+    grid-template-rows: .3fr .3fr 1fr;
+}
+
+.formulario-nombre{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-self: flex-end;
+}
+
+.formulario-email{
+    display: grid;
+    align-self: flex-end;
+    grid-template-rows: 1fr 1fr;
+}
+
+.footer-input{
+    background-color: transparent;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #d7c445;
+    padding: 5px;
+}
+
+.footer-input:focus{
+        outline: none;
+        border-bottom: 1px solid #d7c445;
+}
+
+.formulario-consulta{
+    
+    display: grid;
+    align-self: flex-end;
+    grid-template-rows: 10% 90;
+}
+
+.form-textarea{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #d7c445;
+    padding: 5px;
+    resize: none;
+    border-radius: 15px;
+    margin-block-end: 15px;
+}
+
+.footer-boton{
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+
+    display: grid;
+    grid-template-columns: 70px 30px;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    
+
+}
+
+.footer-boton{
+    border: 2px solid black;
+    background-color: white;
+    padding: 10px 25px;
+    color: black;
+    border-radius: 15px;
+}
+
+.footer-boton:hover{
+    background-color: #212529;
+    transition: 1s;
+    cursor: pointer;
+    color: white;
+}
+
+.form-textarea:focus{
+    outline: none;
+    border-bottom: 1px solid #d7c445;
 }
 
 
-/************       fin seccion 6   ****************/
+.footer-abajo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #212529;
+    color: #fff;
+}
+
+.footer-span-especial{
+    color: var(--color_secciones);
+    text-decoration: underline;
+}
+
+/************       fin footer   ****************/
 
 
 
@@ -982,8 +1173,23 @@ body{
     }
 }
 
+/*  responsividad seccion 5 */
 
-
+@media (max-width: 760px){
+    .footer{
+        height: 1000px;  
+    }
+    
+    .footer-arriba{
+        grid-template-columns: 1fr; 
+    }
+    
+    
+    
+    .footer-link{
+        align-items: center;        
+    }
+}
 
 
 
