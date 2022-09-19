@@ -196,6 +196,11 @@ body{
     cursor: pointer;
 }
 
+.uno-izq-abajo-izq p a{
+    color: #fff;
+    text-decoration: none;
+}
+
 .uno-izq-abajo-der{
     display: flex;
     align-items: center;
@@ -204,6 +209,11 @@ body{
     padding: 15px;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.uno-izq-abajo-der p a{
+    color: var(--color_negro);
+    text-decoration: none;
 }
 
 .uno-sobre{
@@ -939,6 +949,21 @@ body{
 .footer-span-especial{
     color: var(--color_secciones);
     text-decoration: underline;
+}
+
+
+
+
+.incorrecto {
+    display: none;
+    margin-top: 10px;
+}
+
+.incorrecto-show {
+    display: flex;
+    font-size: 11px;
+    margin-top: 1px;
+    color: red;
 }
 
 /************       fin footer   ****************/

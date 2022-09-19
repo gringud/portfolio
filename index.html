@@ -56,10 +56,16 @@
                     </div>
                     <div class="uno-izq-abajo">
                         <div class="uno-izq-abajo-izq">
-                            <p>Mis Trabajos</p>
+                            <p><a href="#seccion5">Mis Trabajos</a></p>
                         </div>
                         <div class="uno-izq-abajo-der">
-                            <p>Contactame</p>
+                            <p><a href="#footer">Contactame</a></p>
+
+
+
+
+
+
                             <svg class="uno-sobre" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z"></path></svg>
                         </div>
                     </div>
@@ -412,7 +418,7 @@
                     </div>
                 </div>
                 <div class="boton-descarga-cv">
-                    <a href="#"> <button class="boton-descarga">Descargar CV</button></a>
+                    <a href="./Curriculum/Nicolas Guillermo Suarez Cv.pdf" download="Cv Nicolas Guillermo Suarez.pdf"> <button class="boton-descarga">Descargar CV</button></a>
                 </div>
             </div>
         </section>
@@ -481,25 +487,28 @@
                 </div>
                 <div class="footer-der">
                     <h2 class="footer-der-titulo">Estima tu proyecto</h2>
-                    <form class="footer-formulario" action="#">
+                    <form class="footer-formulario" action="https://formspree.io/f/xnqrpwpj" method="POST">
                         <div class="formulario-nombre">
                             <label class="footer-label" for="">Nombre Completo</label>
-                            <input class="footer-input" type="text">
+                            <input class="footer-input" id="input-nombre" type="text" name="lastName" >
+                            <span id="incorrecto" class="incorrecto">Ingrese un nombre válido!</span>
                         </div>
                         <div class="formulario-email">
-                            <label class="footer-label" for="">Email</label>
-                            <input class="footer-input" type="text">
+                            <label class="footer-label" for="" >Email</label>
+                            <input class="footer-input" id="input-email" type="text" name="email" >
+                            <span id="incorrecto-email" class="incorrecto">Ingrese un email válido!</span>
                         </div>
 
                         <div class="formulario-consulta">
                             <label class="footer-label" for="">¿Como puedo ayudarte?</label>
-                            <textarea class="form-textarea" name="Consulta" id="input-textarea" cols="30" rows="10"></textarea>
+                            <textarea class="form-textarea" name="message" id="input-textarea" cols="30" rows="10"></textarea>
+                            <span id="incorrecto-consulta" class="incorrecto">Ingrese una consulta!</span>
                         </div>
+                        <button class="footer-boton" type="submit" id="boton-formulario">
+                            Enviar
+                            <svg class="footer-flecha" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>
+                        </button>
                     </form>
-                    <button class="footer-boton">
-                        Enviar
-                        <svg class="footer-flecha" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>
-                    </button>
 
                 </div>
             </div>
@@ -518,6 +527,8 @@
         </div>
 
     </footer>
+
+    <script src="./JavaScript/validacion-form.js"></script>
 </body>
 </html>
 
