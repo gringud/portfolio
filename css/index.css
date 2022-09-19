@@ -1080,77 +1080,21 @@ body{
 
 
 
-
-
-
-
 @media (max-width: 422px){
-
-    .seccion-dos{   
-        height: 750px;
-    }
-    
-    .dos-container{
-        grid-template-rows: 20% 55% 25%;
-        width: 70%;
-    }
-    
-    .dos-medio{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 60% 40%;
-        
-        
-    }
-    
     .dos-medio-izq{
         grid-template-rows: 20% 80%;
         align-items: center;
     }
-    
-    .dos-medio-izq-texto{
-        display: flex;
-        align-items: flex-end;
+}
+
+
+@media (max-width: 643px){
+    .footer-arriba{
+        grid-template-columns: 50% 50%;
+        width: 90%;
         height: 100%;
     }
-    
-    .dos-nombre{
-        margin-left: 5px;
-    }
-    
-    .dos-anio-circulo{
-        width: 75px;
-        height: 75px;
-        margin-top: 0px;
-    }
-    
-    .dos-numero{
-        font-size: 130px;
-        margin-top: -130px;
-    }
-    
-    .dos-cantidad-texto{
-        font-size: 22px;
-    }
-    
-    .dos-abajo-datos{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .dos-abajo-datos div{
-        margin-block-end: 20px;
-    }
 } 
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 660px){
     .seccion-dos{   
