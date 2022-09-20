@@ -993,6 +993,19 @@ body{
     }
 }
 
+@media (max-width: 371px){
+
+    /*      nav     */
+    .nav-container{        
+        height: 180px;
+        
+        grid-template-columns: 30% 40% 10%;
+        justify-content: center;
+    }
+}
+
+
+
 
 /***********    responsive seccion 1    *************/
 @media (max-width: 940px){
@@ -1016,6 +1029,20 @@ body{
         height: 800px;
     }
 } 
+
+@media (max-width: 371px){
+   
+    .uno_img{
+        width: 270px;
+    }
+} 
+
+
+
+
+
+
+
 /************       fin responsive seccion 1    ************/
 
 
@@ -1034,8 +1061,7 @@ body{
     .dos-medio{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 60% 40%;
-        
+        grid-template-rows: 60% 40%;       
         
     }
     
@@ -1116,6 +1142,35 @@ body{
 }
 
 
+@media (max-width: 388px){
+
+    .seccion-dos{   
+        height: 900px;
+    }
+
+    .dos-container{
+        grid-template-rows: 10% 55% 35%;
+        width: 80%;
+    }
+
+    .dos-container{
+        width: 90%;
+    }
+
+    .dos-medio-izq-texto{
+        display: grid;
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .dos-descripcion-texto{
+        font-size: 14px;
+        text-align: justify;
+    }
+
+} 
+
 
 /************       fin responsive seccion 2    ************/
 
@@ -1126,6 +1181,16 @@ body{
         justify-items: center;
     }
 
+}
+
+@media (max-width: 916px){
+    .seccion-cuatro{
+        height: 900px;  /**/
+    }
+    
+    .cuatro-completo{
+        width: 80%; /**/
+    }
 }
 
 @media (max-width: 671px){
@@ -1139,15 +1204,12 @@ body{
     }
 }
 
+@media (max-width: 380px){
 
-@media (max-width: 916px){
-    .seccion-cuatro{
-        height: 900px;  /**/
+    .tres-contenedor{
+        width: 100%;
     }
-    
-    .cuatro-completo{
-        width: 80%; /**/
-    }
+ 
 }
 
 
@@ -1215,6 +1277,30 @@ body{
     }
 }
 
+@media (max-width: 420px){
+    .seccion-cinco{
+        height: 1200px; /**/
+    }
+    
+    .cinco-contenedor{
+        width: 100%;         /**/
+    }
+
+    .cinco-abajo{
+        height: 600px;
+    }
+    
+    .cinco-tarjetas{
+        height: 300px;
+    }
+    
+    .cinco-img{
+        width: 230px;       /**/
+    }    
+}
+
+
+
 /*  responsividad seccion footer */
 
 @media (max-width: 900px){
@@ -1234,11 +1320,8 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
+@media (max-width: 376px){
+    .footer-abajo{
+        font-size: 12px;
+    }
+}
