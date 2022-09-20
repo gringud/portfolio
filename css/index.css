@@ -328,6 +328,7 @@ body{
 
 .dos-descripcion-texto{
     line-height: 24px;
+    text-align: justify;
 }
 
 .dos-medio-der{
@@ -469,6 +470,7 @@ body{
 .tres-tarjeta-abajo{
     margin: 0px 20px;
     align-self: center;
+    text-align: justify;
 }
 
 .tres-tarjeta-img{
